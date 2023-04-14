@@ -15,10 +15,17 @@ a {
     color: dodgerblue;
 }
 
+a:hover {
+    color: #4b8;
+}
+
+nav ul {
+    text-align: center;
+}
 
 nav li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 10px;
     text-decoration: none;
 }
 
