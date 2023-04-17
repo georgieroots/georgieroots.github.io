@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
+  <title>Georgie Roots</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png"> 
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="manifest" href="icons/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <title>Georgie Roots</title>
 </head>
 
 <body>
@@ -24,19 +24,83 @@
         <li><a href="">Home</a></li>
         <li><a href="">Projects</a></li>
         <li><a href="">Blog</a></li>
-        <li><a href="">Contact Me</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Heading 1</h1>
-    <p>Stuff about me</p>
-    <h2>Heading 2</h2>
-    <p>Here's some more stuff I can do</p>
+    <section id="hero">
+      <h1>My name is <span>Georgie Roots</span></h1>
+      <p id="hero">I am a medical doctor and front end developer</p>
+      <a class="btn" href="#contact">Contact me</a>
+      <img id="portrait" src="images/portrait.jpg">
+    </section>
+    <section id="about-me">
+      <h2>About me</h2>
+      <p>As a doctor, I understand the importance of intuitive design in the technologies we use in healthcare. That's
+        why I am passionate about developing and utilising my coding skills to create user-friendly interfaces that have
+        the potential to improve health. </p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        <img class="project" src="https://www.freecodecamp.org/news/content/images/2021/10/ss15.png">
+        <h3>Project title</h3>
+        <p>This is a description about one of my projects which I worked on for an idea I had for a thing about a thing.
+        </p>
+      </article>
+      <article class="project">
+        <img class="project" src="https://www.freecodecamp.org/news/content/images/2021/10/ss15.png">
+        <h3>Project title</h3>
+        <p>This is a description about one of my projects which I worked on for an idea I had for a thing about a thing.
+        </p>
+      </article>
+      <article class="project">
+        <img class="project" src="https://www.freecodecamp.org/news/content/images/2021/10/ss15.png">
+        <h3>Project title</h3>
+        <p>This is a description about one of my projects which I worked on for an idea I had for a thing about a thing.
+        </p>
+      </article>
+    </section>
+    <section id="blog">
+      <h2>My blog</h2>
+      <p>This is where I share my insights into coding and front-end development, as well as explore the intersection
+        between medicine and technology. I also share tips on how doctors and patients can benefit from useful tech
+        tools.
+      </p>
+      <article class="blog-post">
+        <h3>Latest post</h3>
+        <img class="blog" src="https://www.freecodecamp.org/news/content/images/2021/10/ss15.png">
+        <h4>10 things doctors and front end developers have in common</h4>
+      </article>
+    </section>
+    <section id="contact">
+      <h2>Contact me</h2>
+      <a href="">linkedin</a> | <a href="">git hub</a> | <a href="">code pen</a>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Type your message here" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </section>
   </main>
-  <footer>
-    <a href="">linkedin</a> | <a href="">git hub</a> | <a href="">code pen</a>
-  </footer>
 </body>
 
 </html>

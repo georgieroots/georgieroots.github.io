@@ -4,6 +4,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    color: #222222;
+    background-color: #fcfcfc;
 }
 
 ol, ul {
@@ -13,7 +15,6 @@ ol, ul {
 }
 
 a {
-    text-decoration: none;
     color: dodgerblue;
 }
 
@@ -21,8 +22,18 @@ a:hover {
     color: #4b8;
 }
 
+header {
+    background-color: #fcfcfc;
+    opacity: 95%;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
 nav ul {
-    text-align: center;
+    text-align: right;
 }
 
 nav li {
@@ -32,6 +43,66 @@ nav li {
 }
 
 nav a {
-    color: darkslategray;
+    color: #222222;
 }
 
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 64px;
+}
+
+h1 span {
+    color: #4b8;
+    text-decoration: underline;
+}
+
+p#hero {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+}
+
+img#portrait {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+img.project, img.blog {
+    width: 100%;
+}
+
+article {
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgray;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+article.project {
+    width: 250px;
+    display: inline-block;
+}
+
+article.blog-post {
+    width: 350px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+}
+
+.btn, input[type=submit] {
+    background-color: #4b8;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border: none;
+}
+
+.btn:hover, input[type=submit]:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
