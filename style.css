@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
     color: #222222;
     background-color: #fcfcfc;
 }
@@ -46,9 +47,17 @@ nav a {
     color: #222222;
 }
 
+main {
+    margin: 0 10%;
+}
+
+section {
+    margin-top: 50px;
+}
+
 h1 {
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 64px;
+    font-size: 56px;
 }
 
 h1 span {
@@ -62,8 +71,10 @@ p#hero {
 }
 
 img#portrait {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
     border-radius: 50%;
 }
 
@@ -72,37 +83,57 @@ img.project, img.blog {
 }
 
 article {
-    border: 1px lightgray solid;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px lightgray;
+    border: 1px #eaeaea solid;
+    box-shadow: 5px 5px 5px #eaeaea;
     padding: 5px;
     margin: 5px;
     text-align: center;
     background-color: #ffffff;
 }
 
+#skills, #projects {
+    text-align: center;
+}
+
 article.project {
     width: 250px;
     display: inline-block;
+    margin: 0, auto;
 }
 
 article.blog-post {
     width: 350px;
 }
 
+form label {
+    display: none;
+}
+
 input[type=text], textarea {
     width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 0px;
+    background-color: #eaeaea;
+    font-size: 18px;
 }
 
 .btn, input[type=submit] {
     background-color: #4b8;
     color: #ffffff;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
+    font-size: 18px;
 }
 
 .btn:hover, input[type=submit]:hover {
     color: #ffffff;
     cursor: pointer;
+    background-color: #79CFAA;
+}
+
+footer {
+    margin: 10px 0;
+    text-align: center;
 }
